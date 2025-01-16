@@ -1,0 +1,16 @@
+{
+    id:"acernitro",
+    name:"Acer Nitro V",
+    link:"https://store.acer.com/en-in/acer-nitro-v-gaming-laptop-intel-core-i5-13420h-processor-windows-11-home-16-gb-512-gb-ssd-nvidia-geforce-rtx-graphics-144hz-microsoft-office-anv15-51-with-fhd-39-62-cm-15-6-ips-display-obsidian-black-2-1-kg-un-qn8si-003",
+    description:"Acer offers some of the most affordable gaming laptops in its Nitro linup, which are great if you are on a tight budget.",
+    image:"https://static-ecapac.acer.com/media/catalog/product/0/_/0_2_nh.qn8si.002_1_4_2.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=500&width=500&canvas=500:500",
+    specs:{
+        graphics:"NVDIA RTX 4050",
+        processor:"Intel Core i5-13420H",
+        screen:"15.6'' IPS 144Hz",
+        memory:"16 GB",
+        storage:"512 GB NVME SSD"
+    },
+    pros:["Good value for price for an RTX 4050"],
+    cons:["Below average build quality","Colour accuracy is not that great","Slower screen response time","Battery life is not good"],
+},
