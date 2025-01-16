@@ -1,5 +1,5 @@
 import React from 'react';
-import gamingHero from "../assets/img/gamingHero.webp";
+import creatorHero from "../assets/img/creatorHero.webp";
 import processor from "../assets/img/processor.png";
 import graphicsCard from "../assets/img/graphics.png";
 import memory from "../assets/img/memory.png";
@@ -20,40 +20,39 @@ export default function Creators() {
                 <div className="lg:w-2/3">
                     <div className="flex flex-col gap-2 lg:gap-4">
                         <h2 className="text-xl lg:text-4xl text-light">Find the <span className="font-semibold">perfect</span> creator laptop</h2>
-                        <p className="text-xs lg:text-base">Gaming laptops are ideal for high performance gaming and resource intensive tasks. Best for gamers who travel a lot. Gaming laptops generally have powerful GPU for delivering the best graphical performance for games complemented by powerful CPU. These are built to deliver the best performance and hence come with the best components.</p>
+                        <p className="text-xs lg:text-base">Creator laptops are ideal for professionals or enthusiasts in content creation fields such as video editors, graphic designers, 3D artists or animators, and game developers. These often come with a strong CPU and GPU to be able to perform these tasks with ease, and a color accurate display that creators need.</p>
                     </div>
                 </div>
                 <div className="lg:block w-full lg:w-2/5">
-                    <img src={gamingHero} alt="Gaming laptop hero image" className="lg:w-full" />
+                    <img src={creatorHero} alt="Gaming laptop hero image" className="lg:w-full" />
                 </div>
             </div>
 
             <Alert type="info">
-                Gaming laptops are powerful machines, and excellent for people looking for portable gaming or just want high performance. You will get a laptop that will handle all workloads with ease. However there are a few caveats to consider. These laptops are generally bulkier, have poor battery life, and generate more heat and fan noise. These laptops also require more cleaning and maintainance to ensure longetivity.<br />
-                Due to design constraints, gaming laptops will always be more pricey, less upgradable, and worse in performance and thermals than desktop. Also, their performance significantly drops when on battery so you would need to keep it plugged in for optimal performance during heavy tasks. That being said, if you won't travel a lot, desktop is generally a better investment. But if you value portability and freedom to carry a powerful machine anywhere, don't hesitate to buy it, just be aware of its shortcomings.
+                Creative work is a broad term for various use cases with different requirements. Some may need a laptop for graphic design or photo editing, while others focus on 3D modeling, video editing, or audio production. Each use case has distinct needs, which I’ll address below in detail. But in short, design and photo editing benefit from a high-quality touch display with decent components, video editors and 3D may artists require a good display, a powerful CPU, and a dedicated GPU, while writers and music producers need to prioritize storage.
             </Alert>
 
-            <Component title="Graphics Card" image={graphicsCard}>
-                A good GPU should be the top priority in gaming laptop. Since it can't be upgraded, make sure you're choosing the right one. Since it's also the most expensive component, you need to choose the one that fits your budget. I recommend RTX 4050 for budget gaming laptops, RTX 4060 (+20% more powerful than RTX 4050) for mid-tier gaming laptops, and RTX 4070 (+20% more powerful than RTX 4060) for mainstream gaming, which will be the sweet spot for most. RTX 4080 / RTX 4090 is for gamers seeking exceptional performance or laptop enthusiasts Check <a className="underline" href="https://www.notebookcheck.net/Mobile-Graphics-Cards-Benchmark-List.844.0.html" target="_blank">GPU benchmarks</a> for detailed comparision.<br />
-                If you are considering this for video editing / data science, get an NVDIA GPU to benifit from CUDA cores.
-            </Component>
-
             <Component title="Processor" image={processor}>
-                Most gaming laptops are paired with latest H, HX, and HK processors, which are all plenty powerful for gaming, so always prioritize GPU over CPU. For instance, its okay to get an i5 or Ryzen 5 processor if you get a better GPU for that price. For budget builds, i5 with RTX 4050 or RTX 4060 will suffice. Upgrading to i7 is more than enough for most. Upgrading to an i9 processor often yields diminishing returns unless you play CPU-intensive games, so I'd recommend against it.
-                <Alert type="caution"><span className="text-xs lg:text-sm">Try to avoid Ryzen 7 7435HS (Often found in budget builds) which has no iGPU and very poor battery life</span></Alert>
+                Photo editing, music production and design tools often need strong single core performance, for which Intel's latest H series processors like i7-13700H, Ryzen's H or HS series like Ryzen 7 7840HS, and Apple's M2+ chips are more than enough. Video editing and 3D modelling also need strong multicore performance, where Intel's HX series like Intel Core i9-13900HX or Apple's M2 Pro/Max chips shine. 
             </Component>
 
-            <Component title="Memory" image={memory}>
-                You should try getting a laptop with an upgradable memory for future if you can, but many good gaming laptops like ROG Zephyrus come with soldered one. For modern gaming, 16GB of RAM is typically sufficient. However, if you plan to multitask extensively or stream, 32GB of RAM is a better choice and should meet most demands. DDR4 memory performs well for gaming, and upgrading to DDR5 may not provide significant benefits for most users, so don't prioritize it unless your use case justifies the extra cost.
+            <Component title="Graphics Card" image={graphicsCard}>
+                If you are only looking at basic graphic design, or photo editing, an integrated GPU may suffice. For professional graphic designing and photography, RTX 4050 (6GB VRAM) is generally recommended. NVDIA GPU are highly recommended over AMD for video content and 3D work. For video based content creation, choose at least an RTX 4060 (8GB VRAM) to easily handle 4K editing, animations, color grading, multicams, etc. RTX 4070 would be better choice for 8K or professional grade video content. For 3D modelling, high power GPU is very essential, so an RTX 4080 or RTX 4090 is generally the best choice for optimal rendering. Music producers don't really need a dedicated GPU.
             </Component>
 
             <Component title="Screen" image={screen}>
-                For budget gaming laptops, aim for at least an FHD (1080p) display, while mid-to-high-end gaming laptops should feature a 1440p display, which is sufficient for most gamers. 4K displays are suitable only when paired with high-end GPUs.
-                Refresh rate of 120-144Hz is recommended for most users. Refresh rates beyond 144Hz are preferable only with high-end components capable of pushing more FPS in games.
-                Screen size is mostly a matter of preference, but 16 inches tends to be the sweet spot for most people. Consider an IPS display with 300+ nits brightness for better visibility. OLED screens provide stunning visuals but are more expensive.
+                A color gamut is representative of the colors that can be accurately reproduced by output device compared to human eye. Following is the explaination of some standard color spaces. sRGB covers smallest range and very dull and muted. Adobe RGB is broader color gamut, particularly useful for graphic designer and photographers (90-100% Adobe RBG is ideal). DCI-P3 covers slightly smaller than Adobe RGB, leaning to warmer colors, and is standard for video editors and film prooduction (90-100% DCI-P3 is ideal). Delta E is another important measure referring to the accuracy with which color is reproduced compared to how human eye percieves (lower is better, less than 2 is good). As far as display technology goes, OLED has best color accuracy but is significantly more expensive than IPS, which still offers good accuracy. For most creative work, QHD or 4K resolution is recommended.
             </Component>
 
-            <h4 className="text-base lg:text-2xl">Budget gaming laptops</h4>
+            <Component title="Memory" image={memory}>
+                You should try getting a laptop with an upgradable memory for future if you can. Minimum 16 GB is needed to run most modern creator applications. Go with 32GB to allow some room for multitasking. Go bayond this only for advanced 3D rendering, large scale creation, or very heavy multitasking with resource intensive tools.
+            </Component>
+
+            
+            <Alert type="caution">
+                Since these laptops are generally targeted at professionals, they are often costlier than gaming or office laptops with similar specs. But it does come with a benefit of more professional centric laptop that is more inclined to the needs in content creation like SD card slots, better display, pen compatibility, etc. If you do decide to buy a gaming laptop, make sure you get what's needed for your use case. I would also provide some general laptop recommendations which can serve well in content creation so you don't have to research too much, but if you don't find them matching your usecase, its good to look for one yourself.
+            </Alert>
+            <h4 className="text-base lg:text-2xl mt-8">Budget gaming laptops</h4>
             <p className="mt-2 text-xs lg:text-sm">
                 Expect an entry level gaming laptop to cost anywhere between &#8377;50,000 to &#8377;1,00,000. At this price point you can expect an RTX4050 or similar with 6GB graphics memory which is good for most demanding games on 1080p at fairly high settings. It provides overall good performace for it's price.
             </p>

@@ -40,7 +40,7 @@ export default function Gaming() {
 
             <Component title="Processor" image={processor}>
                 Most gaming laptops are paired with latest H, HX, and HK processors, which are all plenty powerful for gaming, so always prioritize GPU over CPU. For instance, its okay to get an i5 or Ryzen 5 processor if you get a better GPU for that price. For budget builds, i5 with RTX 4050 or RTX 4060 will suffice. Upgrading to i7 is more than enough for most. Upgrading to an i9 processor often yields diminishing returns unless you play CPU-intensive games, so I'd recommend against it.
-                <Alert type="caution"><span className="text-xs lg:text-sm">Try to avoid Ryzen 7 7435HS (Often found in budget builds) which has no iGPU and very poor battery life</span></Alert>
+                <Alert type="caution"><span className="text-xs lg:text-sm">Try to avoid Ryzen 7 7435HS. It has no iGPU and very poor battery life</span></Alert>
             </Component>
 
             <Component title="Memory" image={memory}>
@@ -51,6 +51,7 @@ export default function Gaming() {
                 For budget gaming laptops, aim for at least an FHD (1080p) display, while mid-to-high-end gaming laptops should feature a 1440p display, which is sufficient for most gamers. 4K displays are suitable only when paired with high-end GPUs.
                 Refresh rate of 120-144Hz is recommended for most users. Refresh rates beyond 144Hz are preferable only with high-end components capable of pushing more FPS in games.
                 Screen size is mostly a matter of preference, but 16 inches tends to be the sweet spot for most people. Consider an IPS display with 300+ nits brightness for better visibility. OLED screens provide stunning visuals but are more expensive.
+                <Alert type="caution"><span className="text-xs lg:text-sm">If you are looking at a gaming laptop for content creation like video editing, make sure it has good color accuracy</span></Alert>
             </Component>
 
             <h4 className="text-base lg:text-2xl">Budget gaming laptops</h4>
